@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@900;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/Css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="loginbox animate__animated animate__fadeInDown">
+        <h1>Login</h1>
+        <input id="email" type="email" placeholder="Email Address" required >
+        <input id="password" type="password" placeholder="Password" required >
+        <button onclick="login()">Login</button>
+        <p>
+          Don't have an account? <a href="./Pages/signin.html">Sign up here</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAeRgfvQuRubM2FTrOHL6jiiMgnwFf2jYY",
+        authDomain: "bigboomsignin.firebaseapp.com",
+        projectId: "bigboomsignin",
+        storageBucket: "bigboomsignin.firebasestorage.app",
+        messagingSenderId: "110955598358",
+        appId: "1:110955598358:web:59768121c2877a3e019b37",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script>
+      function login() {
+        var mail = document.getElementById("email").value;
+        var passwor = document.getElementById("password").value;
+        console.log(mail);
+        console.log(passwor);
+
+        firebase
+          .auth()
+          .createUserWithEmailAndPassword(mail, passwor)
+          .then((userCredential) => {
+            // Signed in
+            var user = userCredential.user;
+            // ...
+          })
+          .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+          });
+        window.alert("Login successfully..!")
+      }
+    </script>
+  </body>
+</html>

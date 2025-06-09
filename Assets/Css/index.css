@@ -1,0 +1,983 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    background-color: white;
+    position: relative;
+}
+
+.nav1{
+    font-size:15px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.nav1 a{
+    padding-right: 20px;
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+.nav1 a:hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+.nav2{
+    padding-left: 175px;
+    background-color: white;
+}
+
+.nav3{
+    padding-left: 275px;
+    background-color: white;
+}
+
+.nav3 a{
+    padding-right: 20px;
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+
+.nav3 a:hover{
+    color: crimson;
+}
+
+.nav3 #appear:hover{
+    opacity: 1;
+}
+.appearing{
+    display: none;
+}
+
+.image1{
+    height: 700px;
+    width: 1400px;
+}
+
+.imageindex{
+    padding: 60px;
+}
+
+.content{
+    display: flex;
+    
+}
+
+.content1 a{
+    font-size: 15px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.content1 a:hover{
+    color: crimson;
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+.content1{
+    height: 250px;
+    width: 220px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    align-items: center; 
+    justify-content: center;    
+}
+
+.newarrivals h2{
+    font-size: 13px;
+    font-weight: 100;
+    color: gray;
+}
+
+.contentflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flextext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex1{
+    padding-left: 20px;
+    margin-right: 20PX;
+}
+
+.flex1 h5{
+    color: orange;
+}
+
+.flex3 h5{
+    color: orange;
+}
+
+.flex2{
+    margin-right: 20px
+}
+
+.flex3{
+    margin-right: 20px;
+}
+
+.intercontent{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: whitesmoke;
+}
+
+.indexcontent1 h2{
+    font-size:12px;
+    font-weight: 100;
+    color: grey;
+}
+
+.indexcontent1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.indexcontent2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: whitesmoke;
+}
+
+.indexcontent2 h1{
+    font-size: 15px;
+    font-weight: 200;
+    color: gray;
+}
+
+.indexcontent2 h2{
+    font-size: 17px;
+    font-weight: 200;
+    color: orange;
+}
+
+.indexcontent2 p{
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    background-color: black;
+   padding: 15px;
+}
+
+.indexgrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 60px;
+}
+
+.innerflex h1{
+    font-size: 35px;
+}
+
+.innerflex h2{
+    font-size: 12px;
+    font-weight: 200;
+    color: gray;
+}
+
+.innerflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.innernav a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 15px;
+    color: black;
+    background-color:whitesmoke;
+    text-decoration: none;
+}
+
+.innernav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.price {
+    text-decoration: line-through;
+    color:black;
+    text-decoration-color: gray;
+    text-decoration-thickness: 1px;
+    text-decoration-style: solid;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.productflex h1{
+    font-size: 15px;
+    font-weight: 100;
+    color: gray;
+}
+    
+.productflex h2{
+    font-size: 15px;
+    font-weight: 200;
+}
+.priceflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.priceflex button{
+    border: none;
+    background-color:gray;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 20px;
+}
+.flextext  button{
+    border: none;
+    background-color:gray;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 20px;
+}
+.priceflex button:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+    border: 1px solid black;
+}
+.flextext button:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+    border: 1px solid black;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+}
+.product button{
+    border: none;
+    background-color:gray;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 20px;
+}
+.product button:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+    border: 1px solid black;
+}
+.productflex{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 50px;
+}
+
+
+.icon{
+    display: flex;
+}
+
+.icons{
+    padding: 20px;
+}
+
+.furniture{
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+}
+
+.background img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    position:absolute;
+} 
+
+
+.furnitures h1{
+    font-size: 20px;
+}
+
+.furnitures h2{
+    font-size: 30px;
+}
+
+.furnitures h3{
+    font-style: 15px;
+    font-weight: 100;
+    color: gray;
+}
+
+.furnitures a{
+    padding: 10px;
+    background-color: rgb(246, 128, 18);
+    color: white;
+    font-weight: 200;
+    text-decoration: none; 
+    margin-top: 20px;
+}
+.furnitures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    background-color: white;
+    padding: 20px;
+    left: 20%;
+    top: 5%;
+    position: relative;
+    height: 380px;
+    width: 450px;
+}
+
+.symbols h1{
+    font-size: 15px;
+}
+
+.symbols p{
+    font-size: 12px;
+    color: gray;
+}
+
+.symbols{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 300px;
+    align-items: center;
+    padding: 30px;
+}
+
+.symbol{
+    display:flex;
+    padding: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.final h1{
+    font-size: 15px;
+}
+
+.final a{
+    font-size: 15px;
+    font-weight: 100;
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.final p{
+    font-size: 15px;
+    font-weight: 100;
+    color: grey;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.finish{
+    display: flex;
+    justify-content: center;
+}
+
+.button a:hover{
+    color: white;
+    background-color: orangered;
+}
+
+.finals p{
+    font-size: 15px;
+    font-weight: 100;
+    color: grey;
+}
+
+
+.finals h1{
+    font-size: 15px;
+}
+
+.finals{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button a{
+    font-size: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    color: black
+}
+
+.email input{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.email button{
+    height: 45px;
+    width: 100px;
+}
+
+.email button:hover{
+    color: white;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastflex{
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 1px;
+    border-color: black;
+}
+.pageup i{
+    font-size: 20px;
+    padding: 15PX;
+    color: orange;
+    background-color: grey;
+    border-radius: 20px;
+}
+.pageup{
+    float: right;
+    margin-right: 20px;
+    position: sticky;
+    top: 90vh;
+    transition: 2s;
+}
+.grid{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding: 10px;
+    border: black solid 1px;
+    background-color: gray;
+    border-radius: 20px;
+}
+input{
+    outline: none;
+    padding-left: 10px;
+    border-radius: 20px;
+    /* border: none; */
+    width: 300px;
+    height: 30px;
+    background-color:aliceblue;
+}
+button{
+    padding: 5px 15px;
+    border-radius: 20px;
+    /* border: none; */
+}
+.nav .grid{
+    opacity: 0;
+    position: absolute;
+}
+@media(max-width:1200px){
+
+    body::-webkit-scrollbar{
+        display: none;
+    }
+
+    .nav1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav1 a{
+        padding-top: 5px;
+    }
+
+    .nav3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav3 a{
+        padding-top: 5px;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .imageindex{
+        padding: 0;
+    }
+
+
+
+    .image1{
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .content1{
+        height: 180px;
+        width: 150px;
+        margin: 0;
+    }
+
+    .content{
+        justify-content: space-evenly;
+    }
+
+    .contentflex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .indexcontent{
+        display: none;
+    }
+
+    .productflex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .productimg img{
+        height: 300px;
+        width: 760px;
+        object-fit: contain;
+    }
+
+    .icons img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .icons{
+        padding: 0;
+    }
+
+    .icon{
+        justify-content: space-evenly;
+    }
+
+    .furniture{
+        height: 40%;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+    }
+    
+    .background img{
+        height: 35%;
+        width: 100%;
+        object-fit: cover;
+        position:absolute;
+    } 
+
+    
+    .final{
+        display: none;
+    }
+    
+    
+    .finals p{
+        font-size: 12px;
+        font-weight: 100;
+        color: grey;
+    }
+    
+    
+    .finals h1{
+        font-size: 15px;
+    }
+    
+    .finals{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .button a{
+        font-size: 20px;
+        background-color: whitesmoke;
+        padding: 10px;
+        color: black
+    }
+    
+    .email input{
+        width: 250px;
+        height: 20px;
+        font-size: 15px;
+    }
+    
+    .email button{
+        height: 30px;
+        width: 100px;
+        font-size: 20px;
+        /* padding: 10px; */
+    }
+    
+    .copyright p{
+        font-size: 20px;
+    }
+    
+    .lastflex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}
+
+@media(max-width:600px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+
+    .nav1{
+       display: none;
+    }
+    
+
+
+    .nav2 img{
+        height: 20px;
+        width: 80px;
+    }
+
+    .nav2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav3{
+        display: none;
+    }
+
+     .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    } 
+
+
+    .imageindex img{
+        height: 200px;
+        width: 100%;
+        padding: 0;
+    }
+
+    
+.content{
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content1 a{
+    font-size: 5px;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.content1 a:hover{
+    color: crimson;
+}
+
+.content1{
+    height: 50px;
+    width: 40px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    align-items: center; 
+    justify-content: center;    
+}
+
+.content1 img{
+    height: 20px;
+    width: 15px;
+}
+
+.newarrivals h2{
+    font-size: 4px;
+    font-weight: 100;
+    color: gray;
+}
+
+.contentflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.indexcontent1 h2{
+    font-size: 8px;
+    align-items: center;
+}
+
+.indexcontent1 h1{
+    font-size: 20px;
+}
+
+.indexgrid{
+    display: flex;
+    flex-direction: column;
+}
+
+.indexcontent3 img{
+    display: none;
+    height: 300px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerflex h1{
+    font-size: 20px;
+}
+
+.innerflex h2{
+    font-size: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.innernav a{
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: black;
+    background-color:whitesmoke;
+    text-decoration: none;
+}
+
+.productflex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.productimg img{
+    width: 400px;
+    height: 230px;
+    justify-content: center;
+}
+
+.icon{
+    display: none
+}
+
+.background img{
+    height: 30%;
+    width: 100%;
+}
+
+
+
+.furnitures h1{
+    font-size: 10px;
+}
+
+.furnitures h2{
+    font-size: 15px;
+}
+
+.furnitures h3{
+    font-size: 8px;
+    font-weight: 100;
+    color: gray;
+}
+
+.furnitures a{
+    padding: 5px;
+    background-color: rgb(246, 128, 18);
+    color: white;
+    font-weight: 200;
+    text-decoration: none; 
+    margin-top: 10px;
+}
+.furnitures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    background-color: white;
+    padding: 10px;
+    left: 10%;
+    top: 2%;
+    position: relative;
+    height: 190px;
+    width: 225px;
+}
+
+.symbol{
+    display: none
+}
+
+.symbols h1{
+    font-size: 10px;
+}
+
+.symbols p{
+    font-size: 8px;
+    color: gray;
+}
+
+.final{
+    display: none;
+}
+
+
+.finals p{
+    font-size: 12px;
+    font-weight: 100;
+    color: grey;
+}
+
+
+.finals h1{
+    font-size: 15px;
+}
+
+.finals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button a{
+    font-size: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    color: black
+}
+
+.email input{
+    width: 250px;
+    height: 20px;
+    font-size: 15px;
+}
+
+.email button{
+    height: 25px;
+    width: 50px;
+    font-size: 10px;
+}
+
+.copyright p{
+    font-size: 10px;
+}
+
+.lastflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+/* @media(max-width:600px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav1{
+        display: none;
+    }
+    .nav3{
+        display: none;
+    }
+} */
+

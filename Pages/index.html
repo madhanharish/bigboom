@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@900;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Assets/Css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="top" class="navbar">
+      <div class="nav1">
+        <a href="../index.html">HOME</a>
+        <a href="">FEATURES</a>
+        <a href="">SHOP</a>
+        <a href="">PAGES</a>
+        <a href="">BLOG</a>
+      </div>
+      <div class="nav2 animate__animated animate__rubberBand">
+        <img src="../Assets/Images/logo.png" alt="" />
+      </div>
+      <div class="nav3">
+        <a href="">ENG</a>
+        <a href="">USD</a>
+        <a id="appear" href="../Pages/signin.html"
+          >LOGIN / REGISTER
+          <div class="appearing">
+            <h1>signup</h1>
+            <input type="email" name="" placeholder="enter email" id="email" />
+            <input
+              type="password"
+              name=""
+              placeholder="Confirm password"
+              id="password"
+            />
+            <button onclick="module.login()">signup</button>
+          </div></a
+        >
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href="../Pages/cart.html"
+          ><i class="fa-solid fa-bag-shopping"></i
+        ></a>
+      </div>
+    </div>
+    <br />
+    <div class="imageindex">
+      <img
+        class="image1 animate__animated animate__zoomIn"
+        src="../Assets/Images/Index_v1_3-1740x860 (1).jpg"
+        alt=""
+      />
+    </div>
+    <div class="pageup">
+      <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+    <div class="content">
+      <div class="content1 animate__animated animate__fadeIn">
+        <img src="../Assets/Images/category1-80x80.png" alt="" />
+        <a href="../Pages/interior.html">INTERIOR</a>
+      </div>
+      <div class="content1 animate__animated animate__fadeIn">
+        <img src="../Assets/Images/category3-80x80.png" alt="" />
+        <a href="../Pages/kitchen.html">KITCHEN</a>
+      </div>
+      <div class="content1 animate__animated animate__fadeIn">
+        <img src="../Assets/Images/category4-80x80.png" alt="" />
+        <a href="../Pages/bathroom.html">BATHROOM</a>
+      </div>
+      <div class="content1 animate__animated animate__fadeIn">
+        <img src="../Assets/Images/category5-80x80.png" alt="" />
+        <a href="../Pages/lighting.html">LIGHTING</a>
+      </div>
+      <div class="content1 animate__animated animate__fadeIn">
+        <img src="../Assets/Images/category6-80x80.png" alt="" />
+        <a href="../Pages/office.html">OFFICE</a>
+      </div>
+      <div class="content1 animate__animated animate__fadeIn">
+        <img src="../Assets/Images/category7-80x80.png" alt="" />
+        <a href="../Pages/bedroom.html">BED ROOM</a>
+      </div>
+      <div class="content1 animate__animated animate__fadeIn">
+        <img src="../Assets/Images/category2-80x80.png" alt="" />
+        <a href="../Pages/livingroom.html">LIVING ROOM</a>
+      </div>
+    </div>
+    <div class="intercontent">
+      <div class="newarrivals">
+        <center>
+          <h1>NEW ARRIVALS</h1>
+          <h2>
+            SHOP THE NEW SELECTION OF NEW ARRIVALS AT OUR STORE. FILL OUT YOUR
+            WISHLIST ITEM
+          </h2>
+        </center>
+      </div>
+      <div class="contentflex">
+        <div class="flex1" id="itemcart">
+          <div>
+            <img class="hoverimg" src="../Assets/Images/1.jpg" alt="" />
+          </div>
+          <div class="flextext">
+            <h4>Alcatra porkchop venison</h4>
+            <div class="priceflex">
+              <h5>$50.00</h5>
+              <span class="price">$100</span>
+              <button onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex2" id="itemcart">
+          <div>
+            <img class="hoverimg" src="../Assets/Images/2.jpg" alt="" />
+          </div>
+          <div class="flextext">
+            <h4>Aenean vulputate eleif</h4>
+            <h5>$54.00</h5>
+            <button onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="flex3" id="itemcart">
+          <div>
+            <img class="hoverimg" src="../Assets/Images/3.jpg" alt="" />
+          </div>
+          <div class="flextext">
+            <h4>Balltip nullaelit frankfu</h4>
+            <div class="priceflex">
+              <h5>$55.00</h5>
+              <span class="price">$100</span>
+              <button onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex4" id="itemcart ">
+          <div>
+            <img class="hoverimg" src="../Assets/Images/4.jpg" alt="" />
+          </div>
+          <div class="flextext">
+            <h4>Dicta vidisse inermis</h4>
+            <div class="priceflex">
+              <h5>$56.00</h5>
+              <button onclick="addToCart()">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="indexcontent">
+      <div class="indexcontent1">
+        <h1>TOP POPULARS</h1>
+        <h2>
+          LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+          INDUSTRY
+        </h2>
+      </div>
+      <div class="indexgrid">
+        <div class="indexcontent2">
+          <img src="../Assets/Images/asdf.jpg" alt="" />
+          <h1>Alcatra porkchop venison</h1>
+          <h2>$50.00</h2>
+          <p>ADD TO CART</p>
+        </div>
+        <div class="indexcontent3">
+          <img src="../Assets/Images/zxcv.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="innercontent">
+      <div class="innerflex">
+        <h1>BESTSELLER</h1>
+        <h2>
+          LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING
+          INDUSTRY
+        </h2>
+      </div>
+      <div class="innernav">
+        <a href="">DECOR</a>
+        <a href="">KITCHEN</a>
+        <a href="">LIVING ROOM</a>
+        <a href="">SOFA</a>
+      </div>
+    </div>
+    <div class="productflex">
+      <div class="product">
+        <img src="../Assets/Images/c1.jpg" alt="" />
+        <h1>Venison filet mignon</h1>
+        <h2>$59.00</h2>
+        <button>Add to cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../Assets/Images/c2.jpg" alt="" />
+        <h1>Swine brisket shortlo</h1>
+        <h2>$65.00</h2>
+        <button>Add to cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../Assets/Images/c3.jpg" alt="" />
+        <h1>Boudin porkbell shou</h1>
+        <h2>$126.00</h2>
+        <button>Add to cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../Assets/Images/c4.jpg" alt="" />
+        <h1>Biltong ground round</h1>
+        <h2>$98.00</h2>
+        <button>Add to cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../Assets/Images/c5.jpg" alt="" />
+        <h1>Tibeye shank tri-tip</h1>
+        <h2>$123.00</h2>
+        <button>Add to cart</button>
+      </div>
+      <div class="product">
+        <img src="../Assets/Images/c6.jpg" alt="" />
+        <h1>Libero venenatis fauc</h1>
+        <h2>$98.00</h2>
+        <button>Add to cart</button>
+      </div>
+      <div class="product">
+        <img src="../Assets/Images/c7.jpg" alt="" />
+        <h1>Boudin enim tri-tip</h1>
+        <h2>$81.00</h2>
+        <button>Add to cart</button>
+      </div>
+      <div class="product">
+        <img src="../Assets/Images/c8.jpg" alt="" />
+        <h1>Beef ribsen shoulder</h1>
+        <h2>$89.00</h2>
+        <button>Add to cart</button>
+      </div>
+    </div>
+    <div class="productimg">
+      <img src="../Assets/Images/productimg.jpg" alt="" />
+    </div>
+    <div class="icon">
+      <div class="icons"><img src="../Assets/Images/q1.png" alt="" /></div>
+      <div class="icons"><img src="../Assets/Images/q2.png" alt="" /></div>
+      <div class="icons"><img src="../Assets/Images/q3.png" alt="" /></div>
+      <div class="icons"><img src="../Assets/Images/q4.png" alt="" /></div>
+      <div class="icons"><img src="../Assets/Images/q5.png" alt="" /></div>
+      <div class="icons"><img src="../Assets/Images/q6.png" alt="" /></div>
+    </div>
+    <div class="furniture">
+      <div class="background">
+        <img src="../Assets/Images/furniture.jpg" alt="" />
+      </div>
+      <div class="furnitures">
+        <h1>HELLO CUSTOMER!</h1>
+        <h2>VISIT OUR STORE</h2>
+        <h3>21 W. 46th St., New York, United States</h3>
+        <h3>Bigboom@domain.com</h3>
+        <h3>+84 (800) 3333 4567</h3>
+        <a href="">CONTACT US</a>
+      </div>
+    </div>
+    <br />
+    <div class="symbol">
+      <div class="symbols">
+        <img src="../Assets/Images/png1.png" alt="" />
+        <h1>FREE SHIPPING</h1>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </p>
+      </div>
+      <div class="symbols">
+        <img src="../Assets/Images/png2.png" alt="" />
+        <h1>30 DAYS MONEY BACK</h1>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </p>
+      </div>
+      <div class="symbols">
+        <img src="../Assets/Images/png3.png" alt="" />
+        <h1>24/7 HELP CENTER</h1>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </p>
+      </div>
+      <div class="symbols">
+        <img src="../Assets/Images/png4.png" alt="" />
+        <h1>GIFT PROMOTION</h1>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </p>
+      </div>
+    </div>
+    <div class="finish">
+      <div class="final">
+        <h1>SHOP</h1>
+        <br />
+        <a href="">NEW ARRIVALS</a>
+        <a href="">SALE & SPECIAL OFFER</a>
+        <a href="">LIVING ROOM</a>
+        <a href="">FURNITURE DECOR</a>
+        <a href="">LAMP & LIGHTING</a>
+        <a href="">SOFA & CHAIR</a>
+        <a href="">HOME & KITCHENS</a>
+      </div>
+      <div class="final">
+        <h1>INFORMATION</h1>
+        <br />
+        <a href="">ABOUT US</a>
+        <a href="">CUSTOMER SERVICES</a>
+        <a href="">BLOG</a>
+        <a href="">PAGE 404</a>
+        <a href="">SIZING GUIDE</a>
+        <a href="">FAQS</a>
+        <a href="">CONTACT US</a>
+      </div>
+      <div class="final">
+        <h1>ORDER</h1>
+        <br />
+        <a href="">MY ACCOUNT</a>
+        <a href="">VIEW BAG</a>
+        <a href="">PRIVACY POLICY</a>
+        <a href="">COOKIE POLICY</a>
+      </div>
+      <div class="finals">
+        <h1>SIGN UP FOR NEWSLETTER</h1>
+        <br />
+        <p>
+          Don't miss out on exciting promotions and the latest shopping news
+        </p>
+        <div class="lastflex">
+          <div class="email">
+            <input
+              placeholder="your email address...."
+              type="email"
+              name=""
+              id=""
+            />
+            <button>subscribe</button>
+          </div>
+          <br />
+          <div class="button">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © 2022. Designed by SmartAddons.Com. All Rights Reserved.</p>
+    </div>
+
+
+    <script src="../indexcart.js"></script>
+  </body>
+</html>

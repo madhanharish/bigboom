@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-bottom: solid .5px black;
+}
+
+.nav1{
+    font-size:15px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.nav1 a{
+    padding-right: 20px;
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+.nav1 a:hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+.nav2{
+    padding-left: 175px;
+    background-color: white;
+}
+
+.nav3{
+    padding-left: 275px;
+    background-color: white;
+}
+
+.nav3 a{
+    padding-right: 20px;
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+
+.nav3 a:hover{
+    color: crimson;
+}
+
+.cartitem{
+    display: flex;
+    align-items: center;
+    height: 250px;
+    margin-top: 10px;
+    width: 600px;
+    background-color: rgb(215, 215, 215);
+    border-radius: 25px;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+}
+.cartitem img{
+    height: 250px;
+    width: auto;
+    border-radius: 25px;
+    border: .5px solid black;
+}
+.count{
+    display: flex;
+    align-items: center;
+}
+.count p{
+    transition: .5s;
+    width: 25px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px;
+}
+.count button{
+    border-radius: 10px;
+    transition: .5s;
+    padding: 13px;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: gray;
+}
+
+.count button:hover{
+    color: white;
+    background-color: black;
+}
+.count p:hover{
+    background-color: black;
+    color: white;
+}
+.additem{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.addcart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fulldiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.priceitem{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.cart1{
+    margin-top: 10px;
+    width: 30%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    border: .25px solid black;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart1 button{
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    background-color: gray;
+    border: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.cart1 button:hover{
+    background-color: orangered;
+    color: wheat;
+    
+}
+.dlt{
+    display: flex;
+    align-items: center;;
+}
+
+.dlt button{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+}
+.dlt button:hover{
+    color: red;
+}
+
+#clicky{
+    border-radius: 10px;
+}
+
+
+.final h1{
+    font-size: 15px;
+}
+
+.final a{
+    font-size: 15px;
+    font-weight: 100;
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.final p{
+    font-size: 15px;
+    font-weight: 100;
+    color: grey;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.finish{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button a:hover{
+    color: white;
+    background-color: orangered;
+}
+
+.finals p{
+    font-size: 15px;
+    font-weight: 100;
+    color: grey;
+}
+
+
+.finals h1{
+    font-size: 15px;
+}
+
+.finals{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button a{
+    font-size: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    color: black
+}
+
+.email input{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.email button{
+    height: 45px;
+    width: 100px;
+}
+
+.email button:hover{
+    color: white;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastflex{
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 1px;
+    border-color: black;
+}
