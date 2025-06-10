@@ -16,7 +16,7 @@
         <input id="email" type="email" placeholder="Email Address" />
         <input id="password" type="password" placeholder="Password" />
         <button onclick="signin()">Signin</button>
-        <p>Already have an account? <a href="../login.html">Login here</a></p>
+        <p>Already have an account? <a href="../index.html">Login here</a></p>
       </div>
     </div>
 
@@ -53,6 +53,7 @@
           .then((userCredential) => {
             // Signed in
             var user = userCredential.user;
+            window.location.href = "./pages/home.html"
             // ...
           })
           .catch((error) => {

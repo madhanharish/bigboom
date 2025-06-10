@@ -65,6 +65,7 @@
           .then((userCredential) => {
             // Signed in
             var user = userCredential.user;
+           
             // ...
           })
           .catch((error) => {
@@ -72,6 +73,7 @@
             var errorMessage = error.message;
           });
         window.alert("Login successfully..!")
+        window.location.href="./Pages/home.html";
       }
     </script>
   </body>
