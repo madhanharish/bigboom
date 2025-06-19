@@ -47,67 +47,81 @@
 
     <div class="fulldiv">
       <div class="addcart">
-        <div class="cartitem">
+        <div class="cartitem" id="product1">
           <img src="../Assets/Images/a11.jpg" alt="" />
           <div class="additem">
             <h3>White lantern</h3>
-            <p id="rupees">100.00</p>
+            <p id="rupees1">150</p>
             <div class="count">
-              <button id="minus">-</button>
-              <p id="quantity">1</p>
-              <button id="plus">+</button>
+              <button id="minus1">-</button>
+              <p id="quantity1">0</p>
+              <button id="add1">+</button>
             </div>
             <div class="dlt">
-              <button id="remove"><i class="fa-solid fa-trash"></i> Delete</button>
+              <button onclick="remove()">
+                <i class="fa-solid fa-trash"></i> Delete
+              </button>
+               <button id="carts" onclick="addToCart()"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
             </div>
           </div>
         </div>
-        <div class="cartitem">
+        <div class="cartitem" id="product2">
           <img src="../Assets/Images/a12.jpg" alt="" />
           <div class="additem">
             <h3>Table lamp</h3>
-            <p id="rupees">300.00</p>
+            <p id="rupees2">300</p>
             <div class="count">
-              <button id="minus">-</button>
-              <p id="quantity">1</p>
-              <button id="plus">+</button>
+              <button id="minus2">-</button>
+              <p id="quantity2">0</p>
+              <button id="add2">+</button>
             </div>
             <div class="dlt">
-              <button id="remove"><i class="fa-solid fa-trash"></i> Delete</button>
+              <button onclick="remove()">
+                <i class="fa-solid fa-trash"></i> Delete
+              </button>
+               <button id="carts" onclick="addToCart()"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
             </div>
           </div>
         </div>
-        <div class="cartitem">
+        <div class="cartitem" id="product3">
           <img src="../Assets/Images/a13.jpg" alt="" />
           <div class="additem">
             <h3>Clock</h3>
-            <p id="rupees" >50.00</p>
+            <p id="rupees3">500</p>
             <div class="count">
-              <button id="minus">-</button>
-              <p id="quantity">1</p>
-              <button id="plus">+</button>
+              <button id="minus3">-</button>
+              <p id="quantity3">0</p>
+              <button id="add3">+</button>
             </div>
             <div class="dlt">
-              <button id="remove"><i class="fa-solid fa-trash"></i> Delete</button>
+              <button onclick="remove()">
+                <i class="fa-solid fa-trash"></i> Delete
+              </button>
+              <button id="carts" onclick="addToCart()"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
             </div>
           </div>
         </div>
-        <div class="cartitem">
+        <div class="cartitem" id="product4">
           <img src="../Assets/Images/a14.jpg" alt="" />
           <div class="additem">
             <h3>Wall Basket</h3>
-            <p id="rupees">25.00</p>
+            <p id="rupees4">250</p>
             <div class="count">
-              <button id="minus">-</button>
-              <p id="quantity">1</p>
-              <button id="plus">+</button>
+               <button id="minus4">-</button>
+              <p id="quantity4">0</p>
+              <button id="add4">+</button>
             </div>
             <div class="dlt">
-              <button id="remove"><i class="fa-solid fa-trash"></i> Delete</button>
+              <button onclick="remove()">
+                <i class="fa-solid fa-trash"></i> Delete
+              </button>
+               <button id="carts" onclick="addToCart()"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
             </div>
           </div>
         </div>
       </div>
+
+
       <div class="cart1">
         <div class="priceitem">
           <div class="number1">
@@ -119,7 +133,7 @@
             <h4 id="amounts">0</h4>
           </div>
         </div>
-        <button id="clicky">Shop Now</button>
+        <button id="clicky" onclick="shop()">Shop Now</button>
       </div>
     </div>
     <hr />
@@ -187,7 +201,6 @@
     <div class="copyright">
       <p>Copyright © 2022. Designed by SmartAddons.Com. All Rights Reserved.</p>
     </div>
-
 
     <script src="../cart.js"></script>
   </body>

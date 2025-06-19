@@ -65,6 +65,7 @@
           .then((userCredential) => {
             // Signed in
             var user = userCredential.user;
+            localStorage.setItem("mail",user.email);
            
             // ...
           })
@@ -72,7 +73,7 @@
             var errorCode = error.code;
             var errorMessage = error.message;
           });
-        window.alert("Login successfully..!")
+        window.alert("Welcome Back..!")
         window.location.href="./Pages/home.html";
       }
     </script>

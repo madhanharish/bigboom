@@ -68,14 +68,19 @@ body::-webkit-scrollbar{
 .image1{
     height: 700px;
     width: 1400px;
+    border-radius: 30px;
 }
 
 .imageindex{
     padding: 60px;
+    border-top: .5px solid rgb(107, 107, 107);
 }
 
 .content{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
     
 }
 
@@ -87,6 +92,7 @@ body::-webkit-scrollbar{
 }
 
 .content1 a:hover{
+    transition: 0.3s;
     color: crimson;
     transform: scale(1.5);
     overflow: hidden;
@@ -101,6 +107,7 @@ body::-webkit-scrollbar{
     background-color:whitesmoke;
     align-items: center; 
     justify-content: center;    
+    border-radius: 15px;
 }
 
 .newarrivals h2{

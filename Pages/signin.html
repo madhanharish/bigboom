@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
   </head>
   <body>
+    
     <div class="container">
       <div class="loginbox animate__animated animate__fadeInDown">
         <h1>Sign in</h1>
@@ -53,7 +54,6 @@
           .then((userCredential) => {
             // Signed in
             var user = userCredential.user;
-            window.location.href = "./pages/home.html"
             // ...
           })
           .catch((error) => {
@@ -62,6 +62,7 @@
             // ..
           });
           window.alert("Signin successfully..!")
+           window.location.href="./home.html";
       }
     </script>
   </body>
